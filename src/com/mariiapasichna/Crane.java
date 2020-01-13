@@ -12,7 +12,7 @@ public class Crane {
     public static void craneShippingAlgorithm(int numberOfPlates, String from, String to, String additional) {
         if (numberOfPlates == 0) return;
         craneShippingAlgorithm(numberOfPlates - 1, from, additional, to);
-        System.out.println("#" + numberOfPlates + " slot_" + from + " -> slot_" + to);
+        System.out.println("#" + numberOfPlates + " " + from + " -> " + to);
         craneShippingAlgorithm(numberOfPlates - 1, additional, to, from);
     }
 }

@@ -26,7 +26,7 @@ public class Main {
         System.out.println("Enter the number of plates for shipment:");
         int numberOfPlates = scanner.nextInt();
         if (PermissibleLoadRange(numberOfPlates)) {
-            Crane.craneShippingAlgorithm(numberOfPlates, "a", "c", "b");
+            Crane.craneShippingAlgorithm(numberOfPlates, "slot_a", "slot_c", "slot_b");
         } else {
             System.out.println("Error! The number of plates for shipment from 3 to 8");
         }
